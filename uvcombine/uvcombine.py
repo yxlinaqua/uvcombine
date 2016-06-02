@@ -126,7 +126,7 @@ def regrid(hd1, im1, im2raw, hd2):
 
     # create a new HDU object to store the regridded image
     hdu2 = fits.PrimaryHDU(data=im2raw, header=hd2)
-
+    #
     # regrid the image
     #hdu2 = hcongrid_hdu(hdu2, hd1)
     #im2 = hdu2.data.squeeze()
